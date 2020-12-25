@@ -37,6 +37,8 @@ namespace SecurityLevel
 
             services.AddSingleton<IAuthorizationPolicyProvider, SecurityLevelPolicyProvider>();
             services.AddSingleton<IAuthorizationHandler, SecurityLevelAuthorizationHandler>();
+
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,14 +51,15 @@ namespace SecurityLevel
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SecurityLevel v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
-
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+            app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
         }
     }
 }

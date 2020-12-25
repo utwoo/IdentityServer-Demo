@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
@@ -8,23 +7,30 @@ using SecurityLevel.Security;
 
 namespace SecurityLevel.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
     public class AccountController : Controller
     {
         [HttpGet]
-        [Route("Login")]
-        public async Task<IActionResult> Login(string returnUrl)
+        public IActionResult Login()
         {
-            var claims = new List<Claim> {new Claim(Constants.SECURITY_LEVEL, "7")};
-            var claimIdentity = new ClaimsIdentity(claims, "Custom Identity Type");
-            var user = new ClaimsPrincipal(claimIdentity);
+            return View();
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Login([FromForm] string securityLevel)
+        {
+            var claims = new List<Claim> {new Claim(Constants.SECURITY_LEVEL, securityLevel)};
+            var claimIdentity = new ClaimsIdentity(claims, "SecurityIdentityType");
+            var user = new ClaimsPrincipal(claimIdentity);
+            
             await HttpContext.SignInAsync(user);
-            
-            
-            Console.WriteLine("User login successfully.");
-            return Redirect(returnUrl);
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

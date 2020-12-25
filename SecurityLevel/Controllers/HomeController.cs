@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SecurityLevel.Security;
 
 namespace SecurityLevel.Controllers
 {
-    public class WeatherForecastController : Controller
+    public class HomeController : Controller
     {
         [HttpGet]
-        [SecurityLevel(5)]
         public IActionResult Index()
         {
             return View();
