@@ -1,7 +1,6 @@
 using AuthServer.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -18,6 +17,8 @@ namespace AuthServer
                 .AddInMemoryApiScopes(Config.GetApiScopes())
                 .AddTestUsers(Config.GetTestUsers())
                 .AddDeveloperSigningCredential();
+
+            services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -27,14 +28,14 @@ namespace AuthServer
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+            
             app.UseRouting();
-
+            
             app.UseIdentityServer();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context => { await context.Response.WriteAsync("Hello World!"); });
-            });
+            app.UseAuthorization(); // Authorization for consent pages
+            
+            app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
         }
     }
 }

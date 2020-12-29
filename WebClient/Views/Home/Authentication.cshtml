@@ -1,0 +1,32 @@
+﻿@using Microsoft.AspNetCore.Authentication
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication Page</title>
+</head>
+<body>
+<div>
+    <h2>Claims</h2>
+    <dl>
+        @foreach (var claim in User.Claims)
+        {
+            <dt><b>@claim.Type</b></dt>
+            <dd>@claim.Value</dd>
+        }
+    </dl>
+
+    <h2>Properties</h2>
+    <dl>
+        @foreach (var prop in (await Context.AuthenticateAsync()).Properties?.Items)
+        {
+            <dt><b>@prop.Key</b></dt>
+            <dd>@prop.Value</dd>
+        }
+    </dl>
+</div>
+<div>
+    <a href="/home/logout">Logout</a>
+</div>
+</body>
+</html>

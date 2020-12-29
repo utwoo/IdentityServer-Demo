@@ -20,8 +20,8 @@ namespace AuthServer.Configurations
                     Password = "admin",
                     Claims = new List<Claim>
                     {
-                        new Claim(JwtClaimTypes.Email, "admin@utwoo.com"),
-                        new Claim(JwtClaimTypes.Role, "administrators")
+                        new Claim(JwtClaimTypes.Name, "admin"),
+                        new Claim(JwtClaimTypes.WebSite, "https://admin.com"),
                     }
                 }
             };
@@ -89,6 +89,22 @@ namespace AuthServer.Configurations
                         "api1.read",
                         "api2.read",
                         "api2.write"
+                    }
+                },
+                new()
+                {
+                    ClientId = "WebClient",
+                    ClientName = "Web Client",
+                    ClientSecrets = new List<Secret> {new Secret("WebSecretKey".Sha256())},
+                    
+                    RedirectUris = {"https://localhost:5011/signin-oidc"},
+                    PostLogoutRedirectUris = {"https://localhost:5011/signout-callback-oidc"},
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RequireConsent = true,
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
                     }
                 }
             };
