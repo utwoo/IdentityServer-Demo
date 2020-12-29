@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>ClientCredentials.IdentityMvc</AssemblyName>
+        <RootNamespace>ClientCredentials.IdentityMvc</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IdentityModel" Version="4.6.0" />
+    </ItemGroup>
+
+</Project>
