@@ -27,10 +27,7 @@ namespace ClientCredentials.IdentityServer
                     //客户端授权类型，ClientCredentials:客户端凭证方式
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     //允许访问的作用域
-                    AllowedScopes =
-                    {
-                        "secret_api.access"
-                    }
+                    AllowedScopes = {"secret_api.access"}
                 }
             };
 

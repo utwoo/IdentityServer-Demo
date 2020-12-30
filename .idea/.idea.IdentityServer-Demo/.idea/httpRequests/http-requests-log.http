@@ -1,0 +1,377 @@
+GET http://localhost:5002/home/GetData?username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T115504.200.json
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUserGuest&password=apiUserPassword
+
+<> 2020-12-30T115502.500.txt
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T115013.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTg3ODAsImV4cCI6MTYwOTMwMjM4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODc4MCwiaWRwIjoibG9jYWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImp0aSI6IjE3OTIxODc0M0EyOTUxQzRCN0I5MTQwOTlDMTlFMUZCIiwiaWF0IjoxNjA5Mjk4NzgwLCJzY29wZSI6WyJzZWNyZXRfYXBpLmFjY2VzcyJdLCJhbXIiOlsicHdkIl19.iom_hTekUA0cG2P7mTT_mEFx46McnH7phPejd_R3QzD4-EgYbqQmfZnT1hfbFL8PSMsDHgyysPqYyD8uYaCj3-9H6BzLhRQ6KkfJj_rsxnU98o_zb15UySjdSKSxDXjKr1tf3PPnqrBeDpFSKNJTrzz2j5AinKlzBUPvWRL-8E6m0pZKHtILYTLZ2rUDaHrzGWxJJsu_dZoMLiojo0T78Q8jXzb0NoOFSG98Zxlu2rb26LEGrVevSsAplRlc0TFXGG8XtzJBSq6hn1Mo3yWCKaDiBp3_6U4duqvm4GL0-GfmuMRvsAbFdAuJ-LZisQ0blgweHqKB9EGpvMt8VUBdDA
+
+<> 2020-12-30T115008.200.json
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T115001.200.json
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUserGuest&password=apiUserPassword
+
+<> 2020-12-30T114858.500.txt
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T114856.200.json
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUserGuest&password=apiUserPassword
+
+<> 2020-12-30T114318.500.txt
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUserGuest1&password=apiUserPassword
+
+<> 2020-12-30T114313.200.json
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUserGuest&password=apiUserPassword
+
+<> 2020-12-30T114301.500.txt
+
+###
+
+GET http://localhost:5002/home/GetData?username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T114252.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T114233.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T113404.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T113250.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T113226.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T113110.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T112936.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T112821.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTg3ODAsImV4cCI6MTYwOTMwMjM4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODc4MCwiaWRwIjoibG9jYWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImp0aSI6IjE3OTIxODc0M0EyOTUxQzRCN0I5MTQwOTlDMTlFMUZCIiwiaWF0IjoxNjA5Mjk4NzgwLCJzY29wZSI6WyJzZWNyZXRfYXBpLmFjY2VzcyJdLCJhbXIiOlsicHdkIl19.iom_hTekUA0cG2P7mTT_mEFx46McnH7phPejd_R3QzD4-EgYbqQmfZnT1hfbFL8PSMsDHgyysPqYyD8uYaCj3-9H6BzLhRQ6KkfJj_rsxnU98o_zb15UySjdSKSxDXjKr1tf3PPnqrBeDpFSKNJTrzz2j5AinKlzBUPvWRL-8E6m0pZKHtILYTLZ2rUDaHrzGWxJJsu_dZoMLiojo0T78Q8jXzb0NoOFSG98Zxlu2rb26LEGrVevSsAplRlc0TFXGG8XtzJBSq6hn1Mo3yWCKaDiBp3_6U4duqvm4GL0-GfmuMRvsAbFdAuJ-LZisQ0blgweHqKB9EGpvMt8VUBdDA
+
+<> 2020-12-30T112638.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTg3ODAsImV4cCI6MTYwOTMwMjM4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODc4MCwiaWRwIjoibG9jYWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImp0aSI6IjE3OTIxODc0M0EyOTUxQzRCN0I5MTQwOTlDMTlFMUZCIiwiaWF0IjoxNjA5Mjk4NzgwLCJzY29wZSI6WyJzZWNyZXRfYXBpLmFjY2VzcyJdLCJhbXIiOlsicHdkIl19.iom_hTekUA0cG2P7mTT_mEFx46McnH7phPejd_R3QzD4-EgYbqQmfZnT1hfbFL8PSMsDHgyysPqYyD8uYaCj3-9H6BzLhRQ6KkfJj_rsxnU98o_zb15UySjdSKSxDXjKr1tf3PPnqrBeDpFSKNJTrzz2j5AinKlzBUPvWRL-8E6m0pZKHtILYTLZ2rUDaHrzGWxJJsu_dZoMLiojo0T78Q8jXzb0NoOFSG98Zxlu2rb26LEGrVevSsAplRlc0TFXGG8XtzJBSq6hn1Mo3yWCKaDiBp3_6U4duqvm4GL0-GfmuMRvsAbFdAuJ-LZisQ0blgweHqKB9EGpvMt8VUBdDA.Clhw1YR5ano-uUqusu6vPi7HSNmawzprdgxEAPGCtHQPupeacY4BkNr4WqkdOPP9pkhu4gskxzFk2DZgOWMfGfYnx4euCYSJj31rILShtsftuEFfBdLTQXwci00WZsCALY43VJ5w06h-Z_bpG45B1MPYqOZE2l-Pp4OZiJyBvFEmYxEQ7UFMcy2-YKkNMngiTZR2pRZVQr_Ix9cBuEsCw6g-JvwzbhwbHGdUcRUBSVL-eaMklp4qVfFYv_h-vg6TEIXgwP5h3yur7x6BpcLFEy7E1Iu44EKOGWV2aPZ0SM-eeeRzcvuRl4_Vg_xSDiQuSvn9YAoQTxckLfePCfMYuw
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T112620.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTgwNDEsImV4cCI6MTYwOTMwMTY0MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODA0MCwiaWRwIjoibG9jYWwiLCJqdGkiOiI2MzBFOTZDNzNDMTBCNjU4NDQzOUYxNjcwOUZCMDdBRSIsImlhdCI6MTYwOTI5ODA0MCwic2NvcGUiOlsic2VjcmV0X2FwaS5hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.Clhw1YR5ano-uUqusu6vPi7HSNmawzprdgxEAPGCtHQPupeacY4BkNr4WqkdOPP9pkhu4gskxzFk2DZgOWMfGfYnx4euCYSJj31rILShtsftuEFfBdLTQXwci00WZsCALY43VJ5w06h-Z_bpG45B1MPYqOZE2l-Pp4OZiJyBvFEmYxEQ7UFMcy2-YKkNMngiTZR2pRZVQr_Ix9cBuEsCw6g-JvwzbhwbHGdUcRUBSVL-eaMklp4qVfFYv_h-vg6TEIXgwP5h3yur7x6BpcLFEy7E1Iu44EKOGWV2aPZ0SM-eeeRzcvuRl4_Vg_xSDiQuSvn9YAoQTxckLfePCfMYuw
+
+<> 2020-12-30T112612.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTgwNDEsImV4cCI6MTYwOTMwMTY0MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODA0MCwiaWRwIjoibG9jYWwiLCJqdGkiOiI2MzBFOTZDNzNDMTBCNjU4NDQzOUYxNjcwOUZCMDdBRSIsImlhdCI6MTYwOTI5ODA0MCwic2NvcGUiOlsic2VjcmV0X2FwaS5hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.Clhw1YR5ano-uUqusu6vPi7HSNmawzprdgxEAPGCtHQPupeacY4BkNr4WqkdOPP9pkhu4gskxzFk2DZgOWMfGfYnx4euCYSJj31rILShtsftuEFfBdLTQXwci00WZsCALY43VJ5w06h-Z_bpG45B1MPYqOZE2l-Pp4OZiJyBvFEmYxEQ7UFMcy2-YKkNMngiTZR2pRZVQr_Ix9cBuEsCw6g-JvwzbhwbHGdUcRUBSVL-eaMklp4qVfFYv_h-vg6TEIXgwP5h3yur7x6BpcLFEy7E1Iu44EKOGWV2aPZ0SM-eeeRzcvuRl4_Vg_xSDiQuSvn9YAoQTxckLfePCfMYuw
+
+<> 2020-12-30T112413.200.json
+
+###
+
+GET http://localhost:5002/home/GetData
+
+<> 2020-12-30T112038.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTgwNDEsImV4cCI6MTYwOTMwMTY0MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODA0MCwiaWRwIjoibG9jYWwiLCJqdGkiOiI2MzBFOTZDNzNDMTBCNjU4NDQzOUYxNjcwOUZCMDdBRSIsImlhdCI6MTYwOTI5ODA0MCwic2NvcGUiOlsic2VjcmV0X2FwaS5hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.Clhw1YR5ano-uUqusu6vPi7HSNmawzprdgxEAPGCtHQPupeacY4BkNr4WqkdOPP9pkhu4gskxzFk2DZgOWMfGfYnx4euCYSJj31rILShtsftuEFfBdLTQXwci00WZsCALY43VJ5w06h-Z_bpG45B1MPYqOZE2l-Pp4OZiJyBvFEmYxEQ7UFMcy2-YKkNMngiTZR2pRZVQr_Ix9cBuEsCw6g-JvwzbhwbHGdUcRUBSVL-eaMklp4qVfFYv_h-vg6TEIXgwP5h3yur7x6BpcLFEy7E1Iu44EKOGWV2aPZ0SM-eeeRzcvuRl4_Vg_xSDiQuSvn9YAoQTxckLfePCfMYuw
+
+<> 2020-12-30T112034.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T112031.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword1
+
+<> 2020-12-30T112024.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T112004.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111958.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111953.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111920.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111908.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+
+<> 2020-12-30T111848.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111842.200.json
+
+###
+
+GET http://localhost:5002/home/GetData
+
+<> 2020-12-30T111811.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword&client_secret=apiSecret
+
+<> 2020-12-30T111806.200.json
+
+###
+
+GET http://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjNFNDRBODVDRTg0NjRGQzlDNkI1NzIxMTk0MjhBRkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDkyOTgwNDEsImV4cCI6MTYwOTMwMTY0MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoic2VjcmV0X2FwaSIsImNsaWVudF9pZCI6ImFwaUNsaWVudCIsInN1YiI6IjRBMkVDMDY1LTBBMDctNEQxNy1CQTcxLUE5QUEwNDA5NTlGNCIsImF1dGhfdGltZSI6MTYwOTI5ODA0MCwiaWRwIjoibG9jYWwiLCJqdGkiOiI2MzBFOTZDNzNDMTBCNjU4NDQzOUYxNjcwOUZCMDdBRSIsImlhdCI6MTYwOTI5ODA0MCwic2NvcGUiOlsic2VjcmV0X2FwaS5hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.Clhw1YR5ano-uUqusu6vPi7HSNmawzprdgxEAPGCtHQPupeacY4BkNr4WqkdOPP9pkhu4gskxzFk2DZgOWMfGfYnx4euCYSJj31rILShtsftuEFfBdLTQXwci00WZsCALY43VJ5w06h-Z_bpG45B1MPYqOZE2l-Pp4OZiJyBvFEmYxEQ7UFMcy2-YKkNMngiTZR2pRZVQr_Ix9cBuEsCw6g-JvwzbhwbHGdUcRUBSVL-eaMklp4qVfFYv_h-vg6TEIXgwP5h3yur7x6BpcLFEy7E1Iu44EKOGWV2aPZ0SM-eeeRzcvuRl4_Vg_xSDiQuSvn9YAoQTxckLfePCfMYuw
+
+<> 2020-12-30T111449.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword&client_secret=apiSecret
+
+<> 2020-12-30T111401.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&username=apiUser&password=apiUserPassword
+
+<> 2020-12-30T111228.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+
+<> 2020-12-30T111127.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+
+<> 2020-12-29T213009.200.json
+
+###
+
+POST http://localhost:5000/connect/token
+
+grant_type=client_credentials&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+
+<> 2020-12-29T212955.400.json
+
+###
+
+POST http://localhost:5000/connect/token
+
+grant_type=client_credentials&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+
+<> 2020-12-29T212947.400.json
+
+###
+
+GET http://localhost:5002/home/GetData
+
+<> 2020-12-29T212700.200.json
+
+###
+
+GET http://localhost:5002/home/GetData
+
+###
+
+GET http://localhost:5002/home/GetData
+
+###
+
+GET http://localhost:5002/home/GetData
+
+<> 2020-12-29T211912.200.json
+
+###
+
+POST http://localhost:5100/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&scope=api1.read&client_id=ApiTwo&client_secret=APISecretKey
+
+<> 2020-12-29T154411.200.json
+
+###
+
+GET http://localhost:5002/process/clientcredentialtest
+
+<> 2020-12-29T144027.200.json
+
+###
+
+GET http://localhost:5002/process/clientcredentialtest
+
+<> 2020-12-29T143626.200.json
+
+###
+

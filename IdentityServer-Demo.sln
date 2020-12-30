@@ -6,12 +6,26 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLevel", "SecurityLevel\SecurityLevel.csproj", "{DB73A9A7-25C5-4E96-AD16-CE4518DBB959}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientCredentials", "ClientCredentials", "{BE2D05B3-2267-4B3B-83B2-52D31BD8EBD7}"
+ProjectSection(SolutionItems) = preProject
+	ClientCredentials\test.http = ClientCredentials\test.http
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "ClientCredentials\IdentityServer\IdentityServer.csproj", "{9DF71141-7BB4-4A77-88FF-C63593A102CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityApi", "ClientCredentials\IdentityApi\IdentityApi.csproj", "{EA7BAF51-B283-4DB0-A4E4-FB7C25FA6E7A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityMvc", "ClientCredentials\IdentityMvc\IdentityMvc.csproj", "{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Password", "Password", "{633E5F66-2367-4B14-BFF1-41DE21241412}"
+ProjectSection(SolutionItems) = preProject
+	Password\test.http = Password\test.http
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password.IdentityApi", "Password\Password.IdentityApi\Password.IdentityApi.csproj", "{A5490BB5-A2C3-4839-AB94-2B91A18D73D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password.IdentityMvc", "Password\Password.IdentityMvc\Password.IdentityMvc.csproj", "{72E74FBC-259F-4071-88EF-A7DE991ACAEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password.IdentityServer", "Password\Password.IdentityServer\Password.IdentityServer.csproj", "{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +49,18 @@ Global
 		{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E74FBC-259F-4071-88EF-A7DE991ACAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E74FBC-259F-4071-88EF-A7DE991ACAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E74FBC-259F-4071-88EF-A7DE991ACAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E74FBC-259F-4071-88EF-A7DE991ACAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +72,8 @@ Global
 		{9DF71141-7BB4-4A77-88FF-C63593A102CC} = {BE2D05B3-2267-4B3B-83B2-52D31BD8EBD7}
 		{EA7BAF51-B283-4DB0-A4E4-FB7C25FA6E7A} = {BE2D05B3-2267-4B3B-83B2-52D31BD8EBD7}
 		{27F2FA4D-7247-47B1-9588-06C1C7D6BA23} = {BE2D05B3-2267-4B3B-83B2-52D31BD8EBD7}
+		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8} = {633E5F66-2367-4B14-BFF1-41DE21241412}
+		{72E74FBC-259F-4071-88EF-A7DE991ACAEF} = {633E5F66-2367-4B14-BFF1-41DE21241412}
+		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033} = {633E5F66-2367-4B14-BFF1-41DE21241412}
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace IdentityApi
+namespace Password.IdentityApi
 {
     public class Startup
     {
@@ -16,6 +16,18 @@ namespace IdentityApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+            
+            services.AddAuthentication("Bearer")
+                .AddJwtBearer(r =>
+                {
+                    //认证地址
+                    r.Authority = "http://localhost:5000";
+                    //权限标识
+                    r.Audience = "secret_api";
+                    //是否必需HTTPS
+                    r.RequireHttpsMetadata = false;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,10 +40,10 @@ namespace IdentityApi
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context => { await context.Response.WriteAsync("Hello World!"); });
-            });
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());
         }
     }
 }
