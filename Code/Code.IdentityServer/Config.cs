@@ -2,12 +2,12 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
+using IdentityServer4.Models;
 using IdentityServer4.Test;
 
-namespace Implicit.IdentityServer
+namespace Code.IdentityServer
 {
     public static class Config
     {
@@ -28,18 +28,19 @@ namespace Implicit.IdentityServer
             {
                 new Client()
                 {
-                    ClientId = "apiClientImpl",
-                    ClientName = "ApiClient for Implicit",
+                    ClientId = "apiClient",
+                    ClientName = "ApiClient for Code",
+                    RequirePkce = false,
+                    //客户端密码
+                    ClientSecrets = {new Secret("apiSecret".Sha256())},
                     //显示允许确认页面
-                    RequireConsent = true,
-                    //客户端授权类型，Implicit:隐藏模式
-                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RequireConsent = false,
+                    //客户端授权类型，Code:授权码模式
+                    AllowedGrantTypes = GrantTypes.Code,
                     //允许登录后重定向的地址列表，可以有多个
                     RedirectUris = {"https://localhost:5002/auth.html"},
                     //允许访问的资源
-                    AllowedScopes = {"secret_api.access"},
-                    //允许将token通过浏览器传递
-                    AllowAccessTokensViaBrowser = true,
+                    AllowedScopes = {"secret_api.access"}
                 }
             };
 
@@ -67,12 +68,12 @@ namespace Implicit.IdentityServer
             {
                 new TestUser()
                 {
-                    Username = "apiUser",
-                    Password = "apiUserPassword",
+                    Username = "admin",
+                    Password = "admin",
                     SubjectId = "4A2EC065-0A07-4D17-BA71-A9AA040959F4",
                     Claims = new List<Claim>()
                     {
-                        new Claim(ClaimTypes.Role, "admin"), // admin role
+                        new Claim(ClaimTypes.Role, "admin"), // admin
                         new Claim("Department", "Shanghai") // contain customer claim
                     }
                 },
@@ -83,7 +84,7 @@ namespace Implicit.IdentityServer
                     SubjectId = "E293B8CE-9C62-4533-A8A9-7B63DEA53534",
                     Claims = new List<Claim>()
                     {
-                        new Claim(ClaimTypes.Role, "guest") // guest role
+                        new Claim(ClaimTypes.Role, "guest") // guest
                     }
                 }
             };

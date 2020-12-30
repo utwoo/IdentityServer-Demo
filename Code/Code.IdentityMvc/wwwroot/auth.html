@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Auth</title>
+    <script type="text/javascript">
+        let content = "";
+        window.onload = function () {
+            let url = window.location.href;
+
+            let array = url.split("#");
+            if (array.length > 1) {
+                content = array[1];
+            }
+            let search = window.location.search;
+            if (search) {
+                search = search.substr(1);
+                let paras = search.split("&");
+                paras.forEach(element => {
+                    content += element;
+                    content += ";"
+                });
+            }
+            document.getElementById("content").innerHTML = content;
+        }
+    </script>
+</head>
+<body>
+<div id="content"></div>
+</body>
+</html>
