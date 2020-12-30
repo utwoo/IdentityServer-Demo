@@ -10,11 +10,11 @@ ProjectSection(SolutionItems) = preProject
 	ClientCredentials\test.http = ClientCredentials\test.http
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "ClientCredentials\IdentityServer\IdentityServer.csproj", "{9DF71141-7BB4-4A77-88FF-C63593A102CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCredentials.IdentityServer", "ClientCredentials\IdentityServer\ClientCredentials.IdentityServer.csproj", "{9DF71141-7BB4-4A77-88FF-C63593A102CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityApi", "ClientCredentials\IdentityApi\IdentityApi.csproj", "{EA7BAF51-B283-4DB0-A4E4-FB7C25FA6E7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCredentials.IdentityApi", "ClientCredentials\IdentityApi\ClientCredentials.IdentityApi.csproj", "{EA7BAF51-B283-4DB0-A4E4-FB7C25FA6E7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityMvc", "ClientCredentials\IdentityMvc\IdentityMvc.csproj", "{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCredentials.IdentityMvc", "ClientCredentials\IdentityMvc\ClientCredentials.IdentityMvc.csproj", "{27F2FA4D-7247-47B1-9588-06C1C7D6BA23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Password", "Password", "{633E5F66-2367-4B14-BFF1-41DE21241412}"
 ProjectSection(SolutionItems) = preProject
