@@ -27,6 +27,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password.IdentityMvc", "Pas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password.IdentityServer", "Password\Password.IdentityServer\Password.IdentityServer.csproj", "{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implicit", "Implicit", "{18280BD6-E3BC-443F-A8DA-B4A5EEC3981D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implicit.IdentityApi", "Implicit\Implicit.IdentityApi\Implicit.IdentityApi.csproj", "{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implicit.IdentityServer", "Implicit\Implicit.IdentityServer\Implicit.IdentityServer.csproj", "{7B91FB41-1A52-4129-B0FB-2DB519D6D27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Implicit.IdentityMvc", "Implicit\Implicit.IdentityMvc\Implicit.IdentityMvc.csproj", "{5A0F27C8-B4B6-4417-A83E-2EA104862E93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +69,18 @@ Global
 		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B91FB41-1A52-4129-B0FB-2DB519D6D27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B91FB41-1A52-4129-B0FB-2DB519D6D27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B91FB41-1A52-4129-B0FB-2DB519D6D27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B91FB41-1A52-4129-B0FB-2DB519D6D27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0F27C8-B4B6-4417-A83E-2EA104862E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0F27C8-B4B6-4417-A83E-2EA104862E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0F27C8-B4B6-4417-A83E-2EA104862E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0F27C8-B4B6-4417-A83E-2EA104862E93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,5 +95,8 @@ Global
 		{A5490BB5-A2C3-4839-AB94-2B91A18D73D8} = {633E5F66-2367-4B14-BFF1-41DE21241412}
 		{72E74FBC-259F-4071-88EF-A7DE991ACAEF} = {633E5F66-2367-4B14-BFF1-41DE21241412}
 		{2FD48DDC-90B7-4BE6-A02D-5EB5CDC99033} = {633E5F66-2367-4B14-BFF1-41DE21241412}
+		{CC8EF2DD-4AC1-43E2-B669-34ABA0A16B65} = {18280BD6-E3BC-443F-A8DA-B4A5EEC3981D}
+		{7B91FB41-1A52-4129-B0FB-2DB519D6D27E} = {18280BD6-E3BC-443F-A8DA-B4A5EEC3981D}
+		{5A0F27C8-B4B6-4417-A83E-2EA104862E93} = {18280BD6-E3BC-443F-A8DA-B4A5EEC3981D}
 	EndGlobalSection
 EndGlobal
