@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "OIDC.Implicit.IdentityMvc": {
+    "OIDC.IdentityMvc": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": false,

@@ -8,7 +8,7 @@ using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
 
-namespace OIDC.Implicit.IdentityServer
+namespace OIDC.IdentityServer
 {
     public static class Config
     {

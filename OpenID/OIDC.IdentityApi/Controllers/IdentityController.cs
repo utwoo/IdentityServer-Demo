@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace OIDC.Implicit.IdentityApi.Controllers
+namespace OIDC.IdentityApi.Controllers
 {
     [ApiController]
     public class IdentityController : Controller

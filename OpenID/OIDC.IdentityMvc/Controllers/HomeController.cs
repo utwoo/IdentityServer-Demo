@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OIDC.Implicit.IdentityMvc.Models;
+using OIDC.IdentityMvc.Models;
 
-namespace OIDC.Implicit.IdentityMvc.Controllers
+namespace OIDC.IdentityMvc.Controllers
 {
     public class HomeController : Controller
     {

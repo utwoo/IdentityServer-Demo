@@ -1,4 +1,4 @@
-﻿namespace OIDC.Implicit.IdentityMvc.Models
+﻿namespace OIDC.IdentityMvc.Models
 {
     public class TokenData
     {
