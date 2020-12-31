@@ -16,9 +16,10 @@ namespace OIDC.IdentityServer
             new IdentityResource[]
             {
                 new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
                 // Scope for identity resources. the user claims will in id_token
                 new IdentityResource("company", "Company Information",
-                    new List<string>() {"department", "location"})
+                    new List<string>() {"department", "location", ClaimTypes.Role})
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -35,16 +36,26 @@ namespace OIDC.IdentityServer
                     ClientId = "apiClient",
                     ClientName = "ApiClient for Implicit",
                     //显示允许确认页面
-                    RequireConsent = true,
+                    RequireConsent = false,
                     //客户端授权类型，Implicit:隐藏模式
                     AllowedGrantTypes = GrantTypes.Implicit,
                     //允许登录后重定向的地址列表，可以有多个
-                    RedirectUris = {"https://localhost:5002/auth.html"},
+                    RedirectUris =
+                    {
+                        "https://localhost:5002/auth.html",
+                        "https://localhost:5002/home/GetTokenData",
+                        "https://localhost:5002/signin-oidc"
+                    },
+                    PostLogoutRedirectUris =
+                    {
+                        "https://localhost:5002/signout-callback-oidc"
+                    },
                     //允许访问的资源
                     AllowedScopes =
                     {
-                        "secret_api.access",
                         IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "secret_api.access",
                         "company"
                     },
                     //允许将token通过浏览器传递
@@ -63,12 +74,23 @@ namespace OIDC.IdentityServer
                     //客户端授权类型，Hybrid:混合模式
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     //允许登录后重定向的地址列表，可以有多个
-                    RedirectUris = {"https://localhost:5002/auth.html", "https://localhost:5002/home/GetTokenData"},
+                    RedirectUris =
+                    {
+                        "https://localhost:5002/auth.html",
+                        "https://localhost:5002/home/GetTokenData",
+                        "https://localhost:5002/signin-oidc"
+                    },
+                    //注销登录的回调地址列表，可以有多个
+                    PostLogoutRedirectUris =
+                    {
+                        "https://localhost:5002/signout-callback-oidc"
+                    },
                     //允许访问的资源
                     AllowedScopes =
                     {
-                        "secret_api.access",
                         IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "secret_api.access",
                         "company"
                     },
                     AllowOfflineAccess = true,

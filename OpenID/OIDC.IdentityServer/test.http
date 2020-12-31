@@ -11,3 +11,9 @@ GET https://localhost:5000/connect/authorize?client_id=apiClientHybrid&redirect_
 
 ### GET ID TOKEN AND ACCESS TOKEN BY HYBRID [Form Post] (BROWSER)
 GET https://localhost:5000/connect/authorize?client_id=apiClientHybrid&redirect_uri=https://localhost:5002/home/GetTokenData&response_type=code token id_token&scope=secret_api.access openid company&nonce=123&response_mode=form_post
+
+### ACCESS MVC SECURITY PAGE (BROWSER)
+GET https://localhost:5002/Home/Privacy
+
+### ACCESS API SECURITY PAGE (BROWSER)
+GET https://localhost:5002/Home/Detail
