@@ -1,11 +1,12 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Authentication
+
+@{
     ViewData["Title"] = "Privacy Policy";
 
 }
 <h1>@ViewData["Title"]</h1>
 
 <h2>Claims</h2>
-
 <dl>
     @foreach (var claim in User.Claims)
     {
@@ -14,6 +15,16 @@
     }
 </dl>
 
+<h2>Properties</h2>
+<dl>
+    @foreach (var prop in (await Context.AuthenticateAsync()).Properties.Items)
+    {
+        <dt>@prop.Key</dt>
+        <dd>@prop.Value</dd>
+    }
+</dl>
+
+<h2>Logout</h2>
 <li class="nav-item">
     <a class="nav-link text-dark" href="/home/logout">Logout</a>
 </li>
