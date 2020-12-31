@@ -1,0 +1,13 @@
+﻿### GET ID TOKEN AND ACCESS TOKEN BY IMPLICIT (BROWSER) 
+### response_type: token / id_token / token id_token
+### response_mode: query(code) / fragment(implicit&hybrid) / form_post(hybrid)
+### scope need openid, and can contain identity resources
+### nonce for validation (will be return in id_token)
+GET https://localhost:5000/connect/authorize?client_id=apiClient&redirect_uri=https://localhost:5002/auth.html&response_type=token%20id_token&scope=secret_api.access openid company&nonce=123&response_model=fragment
+
+### GET ID TOKEN AND ACCESS TOKEN BY HYBRID (BROWSER) 
+### response_type: code / code token / code id_token / code token id_token
+GET https://localhost:5000/connect/authorize?client_id=apiClientHybrid&redirect_uri=https://localhost:5002/auth.html&response_type=code token id_token&scope=secret_api.access openid company&nonce=123&response_mode=fragment
+
+### GET ID TOKEN AND ACCESS TOKEN BY HYBRID [Form Post] (BROWSER)
+GET https://localhost:5000/connect/authorize?client_id=apiClientHybrid&redirect_uri=https://localhost:5002/home/GetTokenData&response_type=code token id_token&scope=secret_api.access openid company&nonce=123&response_mode=form_post
