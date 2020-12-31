@@ -36,7 +36,7 @@ namespace OIDC.IdentityServer
                     ClientId = "apiClient",
                     ClientName = "ApiClient for Implicit",
                     //显示允许确认页面
-                    RequireConsent = false,
+                    RequireConsent = true,
                     //客户端授权类型，Implicit:隐藏模式
                     AllowedGrantTypes = GrantTypes.Implicit,
                     //允许登录后重定向的地址列表，可以有多个
