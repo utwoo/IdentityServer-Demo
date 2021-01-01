@@ -1,10 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -27,6 +23,8 @@ namespace Password.IdentityApi
                     r.Audience = "secret_api";
                     //是否必需HTTPS
                     r.RequireHttpsMetadata = false;
+                    //设置TOKEN有效偏移时间(AccessToken进行验证的时候，会有一个时间偏移)
+                    r.TokenValidationParameters.ClockSkew = TimeSpan.FromSeconds(0);
                 });
         }
 

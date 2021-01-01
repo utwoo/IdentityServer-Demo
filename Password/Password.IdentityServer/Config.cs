@@ -5,6 +5,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
+using IdentityServer4;
 using IdentityServer4.Test;
 
 namespace Password.IdentityServer
@@ -31,7 +32,22 @@ namespace Password.IdentityServer
                     ClientId = "apiClient",
                     ClientSecrets = {new Secret("apiSecret".Sha256())},
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
-                    AllowedScopes = {"secret_api.access"}
+                    AllowedScopes =
+                    {
+                        "secret_api.access",
+                        //如果要获取refresh_tokens ,必须在scopes中加上OfflineAccess
+                        IdentityServerConstants.StandardScopes.OfflineAccess
+                    },
+                    //设置AccessToken过期时间(60秒)
+                    AccessTokenLifetime = 60,
+                    //如果要获取refresh_tokens ,必须把AllowOfflineAccess设置为true
+                    AllowOfflineAccess = true,
+                    //RefreshToken的最长生命周期,默认30天
+                    AbsoluteRefreshTokenLifetime = 2592000,
+                    //刷新令牌时，将刷新RefreshToken的生命周期
+                    RefreshTokenExpiration = TokenExpiration.Sliding,
+                    //刷新令牌的生命周期。
+                    SlidingRefreshTokenLifetime = 3600,
                 }
             };
 
@@ -65,7 +81,7 @@ namespace Password.IdentityServer
                     Claims = new List<Claim>()
                     {
                         new Claim(ClaimTypes.Role, "admin"), // admin role
-                        new Claim("Department", "Shanghai")  // contain customer claim
+                        new Claim("Department", "Shanghai") // contain customer claim
                     }
                 },
                 new TestUser()

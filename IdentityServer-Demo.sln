@@ -46,6 +46,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAUTH", "OAUTH", "{BBBFCBC3-3AF4-4B6D-910D-2984CB76C3F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OIDC", "OIDC", "{169522D1-42EE-4D6E-94D0-9FFB3C01F3C0}"
+ProjectSection(SolutionItems) = preProject
+	test.http = test.http
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIDC.IdentityApi", "OpenID\OIDC.IdentityApi\OIDC.IdentityApi.csproj", "{6DCB103F-30C0-4BBD-9EA8-69A3C762AAFF}"
 EndProject

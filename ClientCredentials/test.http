@@ -2,7 +2,7 @@
 POST http://localhost:5000/connect/token
 Content-Type: application/x-www-form-urlencoded
 
-grant_type=password&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
+grant_type=client_credentials&scope=secret_api.access&client_id=apiClient&client_secret=apiSecret
 
 ### ACCESS API #1
 GET http://localhost:5001/api/identity
