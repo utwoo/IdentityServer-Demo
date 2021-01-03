@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
@@ -32,13 +33,16 @@ namespace OIDC.IdentityMvc.Controllers
                 OpenIdConnectDefaults.AuthenticationScheme
             );
         }
-        
+
         [Authorize]
         public async Task<IActionResult> Detail()
         {
-            var client = new HttpClient();
-            var token =await HttpContext.GetTokenAsync("access_token");
-            client.SetBearerToken(token);
+            var client = new HttpClient();  
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
+            var refreshToken = await HttpContext.GetTokenAsync("refresh_token");
+            client.SetBearerToken(accessToken);
+            Console.WriteLine($"ACCESS_TOKEN: {accessToken}");
+            Console.WriteLine($"REFRESH_TOKEN: {refreshToken}");
             string data = await client.GetStringAsync("https://localhost:5001/api/identity");
             JArray json = JArray.Parse(data);
             return new JsonResult(json);

@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +21,7 @@ namespace OIDC.IdentityApi
                     r.Authority = "https://localhost:5000";
                     //权限标识
                     r.Audience = "secret_api";
+                    r.TokenValidationParameters.ClockSkew = TimeSpan.FromSeconds(0);
                 });
         }
 

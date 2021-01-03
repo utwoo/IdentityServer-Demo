@@ -1,3 +1,5 @@
+using System;
+using IdentityModel;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
@@ -33,17 +35,21 @@ namespace OIDC.IdentityMvc
                     //Https强制要求标识
                     options.RequireHttpsMetadata = true;
                     //客户端ID
-                    options.ClientId = "apiClient";
+                    options.ClientId = "apiClientHybrid";
                     //客户端Secret（支持隐藏模式和授权码模式，密码模式和客户端模式不需要用户登录）
                     options.ClientSecret = "apiSecret";
                     //请求返回id_token以及token
-                    options.ResponseType = OpenIdConnectResponseType.IdTokenToken;
+                    options.ResponseType = OpenIdConnectResponseType.CodeIdTokenToken;
                     //令牌保存标识
                     options.SaveTokens = true;
                     //添加访问secret_api域api的权限，用于access_token
                     options.Scope.Add("secret_api.access");
                     //请求授权用户的PhoneModel Claim，随id_token返回
                     options.Scope.Add("company");
+                    //添加RefreshToken需要的Scope
+                    options.Scope.Add(OidcConstants.StandardScopes.OfflineAccess);
+                    //设置TOKEN有效偏移时间(AccessToken进行验证的时候，会有一个时间偏移)
+                    options.TokenValidationParameters.ClockSkew = TimeSpan.FromSeconds(0);
                 });
         }
 

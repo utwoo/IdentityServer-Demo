@@ -62,13 +62,14 @@ namespace OIDC.IdentityServer
                     AllowAccessTokensViaBrowser = true,
                     //允许ID_TOKEN附带Claims
                     AlwaysIncludeUserClaimsInIdToken = true,
-                    AllowOfflineAccess = true
                 },
                 new Client()
                 {
                     //客户端Id
                     ClientId = "apiClientHybrid",
                     ClientName = "ApiClient for Hybrid",
+                    //显示允许确认页面
+                    RequireConsent = true,
                     //客户端密码
                     ClientSecrets = {new Secret("apiSecret".Sha256())},
                     //客户端授权类型，Hybrid:混合模式
@@ -90,10 +91,12 @@ namespace OIDC.IdentityServer
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.OfflineAccess,
                         "secret_api.access",
                         "company"
                     },
                     AllowOfflineAccess = true,
+                    AccessTokenLifetime = 60,
                     AllowAccessTokensViaBrowser = true,
                     AlwaysIncludeUserClaimsInIdToken = true,
                     RequirePkce = false

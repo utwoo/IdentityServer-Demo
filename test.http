@@ -3,7 +3,7 @@
 ### response_mode: query(code) / fragment(implicit&hybrid) / form_post(hybrid)
 ### scope need openid, and can contain identity resources
 ### nonce for validation (will be return in id_token)
-GET https://localhost:5000/connect/authorize?client_id=apiClient&redirect_uri=https://localhost:5002/auth.html&response_type=token%20id_token&scope=secret_api.access openid company&nonce=123&response_model=fragment
+GET https://localhost:5000/connect/authorize?client_id=apiClientHybrid&redirect_uri=https://localhost:5002/auth.html&response_type=token%20id_token&scope=secret_api.access openid company offline_access&nonce=123&response_model=fragment
 
 ### GET ID TOKEN AND ACCESS TOKEN BY HYBRID (BROWSER) 
 ### response_type: code / code token / code id_token / code token id_token
@@ -17,3 +17,7 @@ GET https://localhost:5002/Home/Privacy
 
 ### ACCESS API SECURITY PAGE (BROWSER)
 GET https://localhost:5002/Home/Detail
+
+###
+GET https://localhost:5001/api/identity
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkExNUVFRUE5MjA1QUVCODU0Q0ZCNUJFODU1NjIyNEE2IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE2MDk0OTYyODYsImV4cCI6MTYwOTQ5NjM0NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMCIsImF1ZCI6WyJzZWNyZXRfYXBpIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NTAwMC9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiYXBpQ2xpZW50SHlicmlkIiwic3ViIjoiNEEyRUMwNjUtMEEwNy00RDE3LUJBNzEtQTlBQTA0MDk1OUY0IiwiYXV0aF90aW1lIjoxNjA5NDk2MjgyLCJpZHAiOiJsb2NhbCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImFkbWluIiwiZGVwYXJ0bWVudCI6IkFkbWluaXN0cmF0b3IiLCJsb2NhdGlvbiI6IlNoYW5naGFpIiwianRpIjoiNDgwQURDRThCNEVGNjdDOTI2MDc2MDk3NTE3RjkzQzEiLCJzaWQiOiIwRTFGQThGRkFBNjA2ODNCOTk2Q0UwRTIxNDRCOERDMyIsImlhdCI6MTYwOTQ5NjI4Niwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsInNlY3JldF9hcGkuYWNjZXNzIiwiY29tcGFueSIsIm9mZmxpbmVfYWNjZXNzIl0sImFtciI6WyJwd2QiXX0.na9xcQky-nFUuBbtOHzooaosMm4Fh_neBXUzjnADmgCPNblXjds7GzV7LmWQCGLZ1zz1b6MDwyqh831KTpZWKYBnxQj45TEeqHxfNVnKuo0kNwjkfTukEBmtjFn6Sh5Dj4EOmFdDO46_zUEI4LWLucKzNUX-Lu_E17Q3NdEjkFN2MaigykZ1XwkXpPatGhzeO7zAqmTBpeGNT0od07YHdxeFuzyeg5cTkJFVQ1GRwpRutH0bgTgrO1y62-eEtP3s5b_qM_fGarR9-COJ-AY5Jm4KWBqz4m4qI5IdxZ_QwOq87zzNZshyrPflOwJTcaDPNXshasfKKC7F30VBVP3hiQ

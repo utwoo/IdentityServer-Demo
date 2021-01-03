@@ -56,6 +56,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIDC.IdentityMvc", "OpenID\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIDC.IdentityServer", "OpenID\OIDC.IdentityServer\OIDC.IdentityServer.csproj", "{A102AE1F-211C-42A9-B4F1-E186C56BED47}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistents", "Persistents", "{CD51FB80-AD0A-4F71-802C-3BA3A6D0AC36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistents.IdentityServer", "Persistents\Persistents.IdentityServer\Persistents.IdentityServer.csproj", "{F64E48E8-1A07-4F34-BA1D-F828BC3692B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +130,10 @@ Global
 		{A102AE1F-211C-42A9-B4F1-E186C56BED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A102AE1F-211C-42A9-B4F1-E186C56BED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A102AE1F-211C-42A9-B4F1-E186C56BED47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64E48E8-1A07-4F34-BA1D-F828BC3692B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64E48E8-1A07-4F34-BA1D-F828BC3692B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64E48E8-1A07-4F34-BA1D-F828BC3692B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64E48E8-1A07-4F34-BA1D-F828BC3692B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,5 +161,6 @@ Global
 		{6DCB103F-30C0-4BBD-9EA8-69A3C762AAFF} = {169522D1-42EE-4D6E-94D0-9FFB3C01F3C0}
 		{136938EF-8741-49F3-80E7-27C836305E62} = {169522D1-42EE-4D6E-94D0-9FFB3C01F3C0}
 		{A102AE1F-211C-42A9-B4F1-E186C56BED47} = {169522D1-42EE-4D6E-94D0-9FFB3C01F3C0}
+		{F64E48E8-1A07-4F34-BA1D-F828BC3692B0} = {CD51FB80-AD0A-4F71-802C-3BA3A6D0AC36}
 	EndGlobalSection
 EndGlobal
